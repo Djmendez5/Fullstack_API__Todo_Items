@@ -5,3 +5,10 @@ https://scotch.io/tutorials/getting-started-with-node-express-and-postgres-using
 
 I did the frontend (React, Axios, numerous React Plugins) while following this tutorial:
 https://medium.com/technoetics/create-basic-login-forms-using-create-react-app-module-in-reactjs-511b9790dede
+
+![alt text](https://github.com/BrentLeeSF/Fullstack_API__Todo_Items/blob/master/pics/opening_page.png)
+![alt text](https://github.com/BrentLeeSF/Fullstack_API__Todo_Items/blob/master/pics/register.png)
+![alt text](https://github.com/BrentLeeSF/Fullstack_API__Todo_Items/blob/master/pics/profile_page.png)
+![alt text](https://github.com/BrentLeeSF/Fullstack_API__Todo_Items/blob/master/pics/notes_page.png)
+![alt text](https://github.com/BrentLeeSF/Fullstack_API__Todo_Items/blob/master/pics/create_or_edit_notes.png)
+![alt text](https://github.com/BrentLeeSF/Fullstack_API__Todo_Items/blob/master/pics/notes2.png)
