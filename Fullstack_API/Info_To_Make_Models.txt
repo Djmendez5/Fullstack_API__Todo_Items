@@ -1,0 +1,5 @@
+Info used to make models:
+
+sequelize model:create --name User --attributes username:string,firstname:string,lastname:string,password:string,email:string
+
+sequelize model:create --name NoteItem --attributes title:string,content:string,builddate:date
