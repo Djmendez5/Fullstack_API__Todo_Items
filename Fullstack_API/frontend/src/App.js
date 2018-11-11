@@ -6,8 +6,7 @@ injectTapEventPlugin();
 import './App.css';
 
 import LoginScreen from './Loginscreen';
-import NoteScreen from './NoteScreen';
-import UserPage from './UserPage';
+
 
 /* The parent page of all the pages/file, so we need to import dependend pages 
 and create objs */
@@ -17,8 +16,7 @@ class App extends Component {
 
         super(props);
         this.state={
-            loginPage:[],
-            uploadScreen:[]
+            loginPage:[]
         }
     }
 
@@ -37,7 +35,6 @@ class App extends Component {
         return (
             <div className="App">
                 {this.state.loginPage}
-                {this.state.uploadScreen}
             </div>
         );
     }
