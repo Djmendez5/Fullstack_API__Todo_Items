@@ -23,30 +23,6 @@ class Login extends Component {
         super(props);
         var localloginComponent=[];
 
-        localloginComponent.push(
-
-            <MuiThemeProvider>
-                <div>
-
-                    <TextField
-                        type="text"
-                        hintText="Enter your username"
-                        floatingLabelText="username"
-                        onChange = {(event,newValue) => this.setState({username:newValue})}
-                    />
-                    <br/>
-
-                    <TextField
-                        type="password"
-                        hintText="Enter your Password"
-                        floatingLabelText="Password"
-                        onChange = {(event,newValue) => this.setState({password:newValue})}
-                    />
-                    <br/>
-                    <RaisedButton label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event)}/>
-                </div>
-            </MuiThemeProvider>
-        )
         this.state={
             username:'',
             password:'',
@@ -59,30 +35,6 @@ class Login extends Component {
  
         console.log("in User componentWillMount");
         var localloginComponent=[];
-
-        localloginComponent.push(
-
-            <MuiThemeProvider>
-                <div>
-
-                    <TextField
-                        hintText="Enter your Username"
-                        floatingLabelText="username"
-                        onChange = {(event,newValue) => this.setState({username:newValue})}
-                    />
-                    <br/>
-
-                    <TextField
-                        type="password"
-                        hintText="Enter your Password"
-                        floatingLabelText="Password"
-                        onChange = {(event,newValue) => this.setState({password:newValue})}
-                    />
-                    <br/>
-                    <RaisedButton label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event)}/>
-                </div>
-            </MuiThemeProvider>
-        )
         this.setState({loginComponent:localloginComponent})
     }
 
@@ -134,7 +86,6 @@ class Login extends Component {
             alert("username or password is null");
         } 
     }
-    
 
 
     render() {
@@ -143,7 +94,26 @@ class Login extends Component {
                 <MuiThemeProvider>
                     <AppBar title="Login" />
                 </MuiThemeProvider>
-                {this.state.loginComponent}
+
+                <MuiThemeProvider>
+                    <div>
+                        <TextField
+                            hintText="Enter your Username"
+                            floatingLabelText="username"
+                            onChange = {(event,newValue) => this.setState({username:newValue})}
+                        />
+                        <br/>
+
+                        <TextField
+                            type="password"
+                            hintText="Enter your Password"
+                            floatingLabelText="Password"
+                            onChange = {(event,newValue) => this.setState({password:newValue})}
+                        />
+                        <br/>
+                        <RaisedButton label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event)}/>
+                    </div>
+                </MuiThemeProvider>
             </div>
         );
     }
