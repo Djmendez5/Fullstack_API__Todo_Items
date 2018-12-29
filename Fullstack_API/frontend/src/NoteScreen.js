@@ -539,4 +539,3 @@ const style1 = {
 };
 
 export default NoteScreen;
-

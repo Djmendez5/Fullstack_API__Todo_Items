@@ -34,6 +34,7 @@ class App extends Component {
         return (
             <div className="App">
                 {this.state.loginPage}
+                {this.state.uploadScreen}
             </div>
         );
     }
@@ -46,4 +47,3 @@ const style = {
 
 
 export default App;
-

@@ -125,4 +125,3 @@ const style = {
 };
 
 export default Login;
-

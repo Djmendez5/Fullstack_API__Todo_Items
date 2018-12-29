@@ -114,4 +114,3 @@ class ProfileScreen extends Component {
 
 
 export default ProfileScreen;
-

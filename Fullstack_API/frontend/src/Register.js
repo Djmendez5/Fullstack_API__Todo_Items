@@ -153,4 +153,3 @@ const style = {
 };
 
 export default Register;
-
