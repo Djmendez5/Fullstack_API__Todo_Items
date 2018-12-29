@@ -35,13 +35,9 @@ class NoteScreen extends Component {
         console.log(props);
     
         this.state={
-            role:'student',
             filesPreview:[],
             filesToBeSent:[],
             draweropen:false,
-            printcount:10,
-            printingmessage:'',
-            printButtonDisabled:false,
             user:this.props.user,
             noteItems:this.props.user.noteItems,
             notePreview:[],
@@ -83,7 +79,7 @@ class NoteScreen extends Component {
         notePreview = this.renderResultTable(noteItems);
         this.setState({notePreview});
     
-        this.setState({role:this.props.role,user:this.props.user});
+        this.setState({user:this.props.user});
     }
 
 
